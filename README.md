@@ -44,6 +44,14 @@ Add a line to the top of the list under `## Announcements`:
 - **2027-01-12:** First meeting is in a different room this week.
 ```
 
+### Turning a link into a button
+
+Put `{: .button }` straight after any link, on a line of its own, and it's shown as a solid button:
+
+```markdown
+[Sign up](https://example.org/form){: .button }
+```
+
 ### Adding or renaming sections
 
 Every `## Heading` becomes a numbered section and gets a link in the navigation bar automatically.

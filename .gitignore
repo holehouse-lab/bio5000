@@ -1,6 +1,9 @@
 # Built site: GitHub Actions rebuilds this on every push, so it never needs committing.
 _site/
 
+# Personal notes on how to update the site: kept local, not published.
+HOWTO.md
+
 __pycache__/
 .mypy_cache/
 .ruff_cache/

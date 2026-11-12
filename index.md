@@ -15,7 +15,15 @@ details:
 
 ## Announcements
 
-- **2026-11-12:** The 2027 site is live. The meeting time, room, and sign-up form will be posted here before the first meeting.
+- **2026-11-12:** The 2027 site and sign-up forms are now live! If you're interested in being kept up-to-date and presenting in DGE, [please sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
+
+
+
+## Sign up
+
+Sign up here to be included in all emails etc. 
+
+[Sign up](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform){: .button }
 
 ## Schedule
 
@@ -115,7 +123,7 @@ All are welcome. Students can register for BIO5000 for credit, but postdocs, sta
 
 ### Registration
 
-- If you plan to attend in any capacity, [please complete the sign-up form.
+- If you plan to attend in any capacity, [please complete the sign-up form](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
 - If you are taking this for credit, **also register for BIO5000** (Alex is the instructor).
 - But anyone can show up for any paper!
 

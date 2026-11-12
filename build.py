@@ -42,9 +42,10 @@ FRONT_MATTER_DELIMITER = "---"
 REQUIRED_TEXT_FIELDS = ("course", "semester", "title", "tagline", "description")
 
 # Python-Markdown extensions: pipe tables for the schedule, 'toc' to give every heading an
-# id we can link to, 'sane_lists' for predictable list behaviour, and 'smarty' for curly
-# quotes, dashes, and ellipses.
-MARKDOWN_EXTENSIONS = ["tables", "toc", "sane_lists", "smarty"]
+# id we can link to, 'sane_lists' for predictable list behaviour, 'smarty' for curly
+# quotes, dashes, and ellipses, and 'attr_list' so a link can be turned into a button by
+# writing {: .button } straight after it.
+MARKDOWN_EXTENSIONS = ["tables", "toc", "sane_lists", "smarty", "attr_list"]
 
 # Top-level sections are written as '## Heading' in the Markdown; each one gets a link in
 # the navigation bar. The pattern matches the heading HTML that the 'toc' extension emits.
