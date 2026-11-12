@@ -1,0 +1,7 @@
+# Built site: GitHub Actions rebuilds this on every push, so it never needs committing.
+_site/
+
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+.DS_Store

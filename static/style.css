@@ -1,0 +1,471 @@
+/* ---------------------------------------------------------------------------
+   BIO5000 journal club: one page, two typefaces, one accent colour.
+   Colours and fonts are defined once here and reused everywhere below.
+   --------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: light dark;
+
+  --color-paper: #fbfaf6;
+  --color-ink: #1d1b18;
+  --color-muted: #6b665d;
+  --color-rule: #e2ddd2;
+  --color-wash: #f3efe5;
+  --color-accent: #a51417;
+  --color-highlight: #fbedb0;
+
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --page-width: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #161513;
+    --color-ink: #ebe7df;
+    --color-muted: #a39d92;
+    --color-rule: #34312c;
+    --color-wash: #211f1c;
+    --color-accent: #f08377;
+    --color-highlight: #57481a;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  /* Long unbroken strings (URLs, slash-separated words) wrap rather than push the page sideways on phones. */
+  overflow-wrap: break-word;
+}
+
+.hero,
+main,
+footer {
+  max-width: var(--page-width);
+  margin-inline: auto;
+}
+
+/* Small uppercase monospace labels, used for the eyebrow, details, nav, table header, and footer. */
+.eyebrow,
+.details dt,
+nav,
+main th,
+footer {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---------- Header ---------- */
+
+.hero {
+  padding-top: 4.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--color-accent);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 7.5vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.03;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.tagline {
+  max-width: 38rem;
+  margin: 1.25rem 0 0;
+  color: var(--color-muted);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Header figure (static/hero.png): a full-width banner whose bottom edge sits on the rule above the
+   details. 'multiply' lets the image's white background melt into the page colour. */
+.hero-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 2.25rem;
+  mix-blend-mode: multiply;
+}
+
+/* On the dark theme the image is inverted (white becomes black, dark lines become light) and its hues
+   rotated back so blues stay blue and oranges stay orange; 'screen' then melts the black background
+   into the page colour. */
+@media (prefers-color-scheme: dark) {
+  .hero-figure {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1.25rem 1.5rem;
+  margin: 0;
+  padding: 1.25rem 0 1.4rem;
+  border-top: 1px solid var(--color-ink);
+}
+
+.details dt {
+  color: var(--color-muted);
+}
+
+.details dd {
+  margin: 0.2rem 0 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.15rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+nav a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+/* ---------- Content ---------- */
+
+main {
+  counter-reset: section;
+}
+
+/* Each section opens with a hairline rule and a small running number (01, 02, ...). */
+h2 {
+  counter-increment: section;
+  margin: 4.25rem 0 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-rule);
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.012em;
+  scroll-margin-top: 1rem;
+}
+
+main > h2:first-child {
+  margin-top: 2.75rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+h2::before {
+  content: counter(section, decimal-leading-zero);
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+}
+
+h3 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  scroll-margin-top: 1rem;
+}
+
+p {
+  margin: 0 0 1.1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+mark {
+  padding: 0.08em 0.12em;
+  border-radius: 2px;
+  background: var(--color-highlight);
+  color: inherit;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+ol,
+ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.6rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+li > ol,
+li > ul {
+  margin-top: 0.45rem;
+}
+
+ol > li::marker {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+}
+
+ul > li::marker {
+  color: var(--color-accent);
+}
+
+/* Blockquotes are used as call-outs for things people really shouldn't miss. */
+blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1.15rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-wash);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* The WHAT / WHY / HOW list (the first numbered list after the "Introduction" heading) is shown as
+   three cards. If the Markdown around it changes, this just falls back to an ordinary list. */
+#introduction + p + ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+#introduction + p + ol > li {
+  margin: 0;
+  padding: 0.9rem 1.1rem 1.1rem;
+  border-top: 2px solid var(--color-accent);
+  background: var(--color-wash);
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+#introduction + p + ol > li p {
+  margin: 0;
+}
+
+#introduction + p + ol > li p:first-child {
+  margin-bottom: 0.35rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* ---------- Schedule table ---------- */
+
+main table {
+  width: 100%;
+  margin: 1.75rem 0 0;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+main th {
+  padding: 0 1rem 0.6rem 0;
+  border-bottom: 1px solid var(--color-ink);
+  color: var(--color-muted);
+  text-align: left;
+}
+
+main td {
+  padding: 0.75rem 1rem 0.75rem 0;
+  border-bottom: 1px solid var(--color-rule);
+  vertical-align: baseline;
+}
+
+main td:first-child {
+  width: 8.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+main td:nth-child(2) {
+  width: 12rem;
+}
+
+main th:last-child,
+main td:last-child {
+  padding-right: 0;
+}
+
+/* The three classes below are added by the small script at the bottom of template.html. */
+main td.is-tbd,
+main tr.is-past td {
+  color: var(--color-muted);
+}
+
+main tr.is-next td:first-child {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+main tr.is-next td:first-child::after {
+  content: "Next";
+  margin-left: 0.6rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+  margin-top: 5rem;
+  padding: 1.25rem 0 3.5rem;
+  border-top: 1px solid var(--color-ink);
+  color: var(--color-muted);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 40rem) {
+  body {
+    font-size: 1.0625rem;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero-figure {
+    margin-top: 1.75rem;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+  }
+
+  .details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  h2 {
+    margin-top: 3.25rem;
+    font-size: 1.75rem;
+  }
+
+  #introduction + p + ol {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Each schedule row becomes a small block: date on the left, presenter and paper stacked on the right. */
+  main thead {
+    display: none;
+  }
+
+  main tbody tr {
+    display: grid;
+    grid-template-columns: 5.25rem minmax(0, 1fr);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  main tbody tr:first-child {
+    border-top: 1px solid var(--color-ink);
+  }
+
+  main td,
+  main td:first-child,
+  main td:nth-child(2) {
+    width: auto;
+    padding: 0;
+    border: 0;
+  }
+
+  main td:first-child {
+    grid-row: 1 / span 2;
+    padding-top: 0.2rem;
+  }
+
+  main td:nth-child(2),
+  main td:nth-child(3) {
+    grid-column: 2;
+  }
+
+  main tr.is-next td:first-child::after {
+    display: block;
+    width: fit-content;
+    margin: 0.35rem 0 0;
+  }
+
+  /* An unfilled slot shows a single "TBD" rather than one for the presenter and one for the paper. */
+  main td.is-tbd:nth-child(3) {
+    display: none;
+  }
+}
