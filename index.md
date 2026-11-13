@@ -28,7 +28,7 @@ Sign up here to be included in all emails etc.
 
 ## Schedule
 
-We meet every Tuesday from January 19th through May 11th. Alex will give a short (10-min) intro on January 19th, and from there on out, each person will present once. 
+We meet every Tuesday from January 26th through May 11th. Alex will give a short (10-min) intro on January 26th, and from there on out, each person will present once. Expect ~1 hour (although good discussion may extend things!).
 
 | Date | Presenter | Paper |
 | --- | --- | --- |
