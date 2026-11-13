@@ -1,6 +1,6 @@
 ---
 # Page-level facts shown in the header. The page content starts after the second '---'.
-course: BIO5000 Journal Club
+course: BBS 5000.01 Journal Club
 semester: Spring 2027
 title: Disorderly gene expression (DGE)
 tagline: A journal club focused on papers that explore the intersection between intrinsically disordered regions and transcriptional regulation/chromatin/gene expression.
@@ -119,12 +119,12 @@ Alternatively, you are WELCOME to chalk talk the entire thing, but if you do, pl
 
 ### Who is welcome?
 
-All are welcome. Students can register for BIO5000 for credit, but postdocs, staff scientists, undergrads, faculty, friends, family, pets – everyone can come!  You are also welcome to "audit" (attend without presenting), although we will try to fill every slot, so we may ask auditors if they're willing to present.
+All are welcome. Students can register for BBS 5000.01 for credit, but postdocs, staff scientists, undergrads, faculty, friends, family, pets – everyone can come!  You are also welcome to "audit" (attend without presenting), although we will try to fill every slot, so we may ask auditors if they're willing to present.
 
 ### Registration
 
 - If you plan to attend in any capacity, [please complete the sign-up form](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
-- If you are taking this for credit, **also register for BIO5000** (Alex is the instructor).
+- If you are taking this for credit, **also register for BBS 5000.01** (Alex is the instructor).
 - But anyone can show up for any paper!
 
 ### Which papers?
@@ -133,4 +133,4 @@ We'll put together a master list of papers early in 2027, and then ask folks sig
 
 ### Course master
 
-BIO5000 is led by Alex Holehouse. For administrative issues or course questions, please email Alex at [alex.holehouse@wustl.edu](mailto:alex.holehouse@wustl.edu).
+BBS 5000.01 is led by Alex Holehouse and Ryan Emenecker. For administrative issues or course questions, please email Alex at [alex.holehouse@wustl.edu](mailto:alex.holehouse@wustl.edu).
