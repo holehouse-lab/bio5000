@@ -42,7 +42,7 @@ We meet every Tuesday from January 19th through May 11th. Alex will give a short
 | Mar 16 | TBD | TBD |
 | Mar 23 | TBD | TBD |
 | Mar 30 | TBD | TBD |
-| Apr 6 | TBD | TBD |
+| Apr 6 | **SPRING BREAK** | N/A |
 | Apr 13 | TBD | TBD |
 | Apr 20 | TBD | TBD |
 | Apr 27 | TBD | TBD |
