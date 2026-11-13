@@ -16,6 +16,7 @@ details:
 ## Announcements
 
 - **2026-11-12:** The 2027 site and sign-up forms are now live! If you're interested in being kept up-to-date and presenting in DGE, [please sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
+- **2026-11-12:** Class starts 2027-01-26 (as 2027-01-19 is a holiday!)
 
 
 
@@ -31,7 +32,6 @@ We meet every Tuesday from January 19th through May 11th. Alex will give a short
 
 | Date | Presenter | Paper |
 | --- | --- | --- |
-| Jan 19 | TBD | TBD |
 | Jan 26 | TBD | TBD |
 | Feb 2 | TBD | TBD |
 | Feb 9 | TBD | TBD |
