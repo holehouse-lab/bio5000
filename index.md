@@ -31,7 +31,7 @@ We meet every Tuesday from January 19th through May 11th. Alex will give a short
 
 | Date | Presenter | Paper |
 | --- | --- | --- |
-| Jan 19th | TBD | TBD |
+| Jan 19 | TBD | TBD |
 | Jan 26 | TBD | TBD |
 | Feb 2 | TBD | TBD |
 | Feb 9 | TBD | TBD |
