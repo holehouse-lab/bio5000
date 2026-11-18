@@ -15,10 +15,9 @@ details:
 
 ## Announcements
 
-- **2026-11-12:** The 2027 site and sign-up forms are now live! If you're interested in being kept up-to-date and presenting in DGE, [please sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
-- **2026-11-12:** Class starts 2027-01-26 (as 2027-01-19 is a holiday!)
-
-
+- **2026-11-12:** The 2027 site and sign-up forms are now live! If you're interested in staying up to date and presenting in DGE, [please sign up here](https://docs.google.com/forms/d/e/1FAIpQLSfjKyxQ2uNoLCjhJM8riXd7gEpKmPSTA-WvICvcJL6ib_MReA/viewform).
+- **2026-11-12:** **CORRECTION** Class starts 2027-01-26 (as 2027-01-19 is a holiday!)
+- **2026-11-12:** **REVERSION** Class starts 2027-01-19 (I cannot explain why I thought 2027-01-19 was a holiday, but if it turns out it actually is a holiday, I'm just going to quietly retire.)
 
 ## Sign up
 
@@ -28,10 +27,11 @@ Sign up here to be included in all emails etc.
 
 ## Schedule
 
-We meet every Tuesday from January 26th through May 11th. Alex will give a short (10-min) intro on January 26th, and from there on out, each person will present once. Expect ~1 hour (although good discussion may extend things!).
+We meet every Tuesday from January 19th through May 11th. Alex will give a short (10-min) intro on Jan 19th, and from there on out, each person will present once. Expect ~1 hour (although good discussion may extend things!).
 
 | Date | Presenter | Paper |
 | --- | --- | --- |
+| Jan 19th | TBD | TBD |
 | Jan 26 | TBD | TBD |
 | Feb 2 | TBD | TBD |
 | Feb 9 | TBD | TBD |
