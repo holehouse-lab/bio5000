@@ -71,7 +71,7 @@ Relevant papers focus on topics including (but *not limited* to):
 
 **Auditors:** Come to whichever papers interest you most!
 
-**For credit:** If you're taking the course for credit, you're expected to come to every class (please email Alex if you can't make it). Also, please follow the format instructions below. We have up to 17 for-credit slots.
+**For credit:** If you're taking the course for credit, you're expected to come to every class (please email Alex if you can't make it). Also, please follow the format instructions below. We have up to 16 for-credit slots.
 
 ## Presentation format
 
